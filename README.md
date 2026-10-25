@@ -2,14 +2,6 @@
 
 # Campus Route Finder
 
-**Graphs, BFS and DFS in simple C**
-
-![Language](https://img.shields.io/badge/language-C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Topic](https://img.shields.io/badge/topic-Graphs-2EA44F?style=for-the-badge)
-![Course](https://img.shields.io/badge/DSA-PPF%20Week%209-F59E0B?style=for-the-badge)
-
-</div>
-
 ## Table of Contents
 
 1. [About the Project](#about-the-project)
@@ -542,43 +534,6 @@ Enter your choice: 8
 Thank you for using the Campus Route Finder.
 ```
 
-## Viva Questions and Answers
-
-**Q1. How is the campus represented?**
-As a graph. Locations are vertices and paths are edges. It is undirected and unweighted.
-
-**Q2. What is an adjacency list?**
-For each vertex, a list of the vertices directly connected to it. Here it is `adjList[][]` with `degree[]` telling how many entries are used.
-
-**Q3. What is an adjacency matrix?**
-A V x V table where a 1 at row i and column j means locations i and j are joined.
-
-**Q4. Why is BFS used for the shortest route?**
-BFS explores places in order of distance, one path away, then two paths away, and so on. With equal path lengths, the first time it reaches the destination is the shortest route.
-
-**Q5. What data structure does BFS use?**
-A queue. It is first in, first out, which gives the level-by-level order.
-
-**Q6. How is the route printed after BFS?**
-`parent[v]` stores the place from which `v` was discovered. Starting at the destination and following `parent[]` back to the start gives the route in reverse, so it is reversed before printing.
-
-**Q7. What does DFS use instead of a queue?**
-The call stack, through recursion.
-
-**Q8. How do you find disconnected locations?**
-Run DFS from the start. Any location whose `visited[]` value is still 0 afterwards cannot be reached from the start.
-
-**Q9. What is the time complexity of BFS and DFS?**
-O(V + E) with an adjacency list, because every vertex and every edge entry is processed once. With an adjacency matrix it is O(V^2).
-
-**Q10. Why is the adjacency list better here?**
-A campus has few paths compared to the number of possible pairs of places, so the list uses less memory (O(V + E) against O(V^2)) and BFS and DFS run faster.
-
-**Q11. What is the purpose of the `visited` array?**
-It stops the same location being processed twice, which also prevents an endless loop when the graph has cycles.
-
 ## Author
 
-**Shaurya**
-BCA, CGC Jhanjeri
-GitHub: [@Shaurya](https://github.com/Shaurya)
+[**Shaurya**](https://github.com/Shaurya)
