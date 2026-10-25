@@ -14,8 +14,7 @@
 8. [Code Walkthrough](#code-walkthrough)
 9. [Sample Outputs](#sample-outputs)
 10. [Test Cases](#test-cases)
-11. [Viva Questions and Answers](#viva-questions-and-answers)
-12. [Author](#author)
+11. [Author](#author)
 
 ## About the Project
 
